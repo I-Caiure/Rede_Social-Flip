@@ -1,0 +1,605 @@
+body {
+    
+    background: #EEE;
+    padding-top: 90px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+    
+
+
+header {
+    text-decoration: none;
+    color:inherit;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*INICIO DO MENU - 1; 2 E 3*/
+
+.menu {
+
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    align-items: center;
+    color: black;
+    
+    position: fixed; /*Isso que cria a ideia do menu ser fixo, atribuindo tamanho e localização exata dele*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 3;
+}
+
+.menu_options {
+    
+    background: white;
+    text-transform: bold;
+    font-weight: bold;
+    display: flex;
+    color: black;   
+    margin-left: 18px;  
+}
+
+
+.menu_options ul {
+    position:relative;
+    float:left;
+    display: flex;
+    gap: 3rem;
+    background: white;
+    color: black; 
+}
+
+.menu_options a {
+    background: white;
+    color: black;
+    transition: 0.3s;     
+}
+
+.menu_options a:hover {
+    color: rgb(132, 0, 255);
+}
+
+
+.logo_principal {
+    
+    width: 5%;
+    background: white;
+}
+
+
+
+
+  .person_perfil_small {
+    margin: 0 18px 0 0;
+    width: 50px;
+    border-radius: 100%;
+    border: solid 5px blueviolet;
+    padding: 2px;
+    align-items: center;
+    transition: 1s;
+  }
+
+  .person_perfil_small:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+    
+  }
+
+/*.boxsearch {
+    background-color: #EEE;
+    width: 330px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-right: 10px;
+    
+}*/
+
+.boxsearch {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.search {
+    background-color: #EEE;
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-right: 15px;
+}
+
+.barsearch {
+    width: 200px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+}
+
+.fa-magnifying-glass:hover {
+    color: blueviolet;
+    cursor: pointer;
+
+}
+/*FINAL DO MENU - 1; 2 E 3*/
+/* DIVISÃO ENTRE CABEÇALHO E CORPO*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /*CONTAINER GERAL DO TAMANHO DA PÁGINA*/
+}
+
+.container_one {
+    display: flex;
+    justify-content:start;
+    gap: 1.5rem;
+    
+    flex-wrap: wrap;
+    flex-direction:column; 
+    position: relative;
+    margin-left: 35px;/*NECESSARIO APLICAR MARGIN PELO FATO DO ELEMENTO SER RELATIVO*/
+
+}
+
+/*INICIO VALOR 4*/
+.perfil {
+    width: 250px;
+    height: 400px;
+    background: white;
+    
+    border-radius: 3%;
+}
+
+
+.foto_background {
+    width: 100%;
+    display: block;
+    border-top-right-radius: 3%;
+    border-top-left-radius: 3%;
+    transition: 0.5s;
+}
+
+.foto_background:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+.foto_perfil {
+    width: 90px;
+    border-radius: 100%;
+    position: absolute;/*Ou seja, usando margens negativas 
+    iguais a metade da largura e altura, e depois posicionando o 
+    elemento de forma absoluta em 50% / 50%*/
+    left: 50%;
+    margin-left: -50px;
+    top: 120px;
+    border: solid 2px blueviolet;
+    transition: 0.5s;
+}
+
+.foto_perfil:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+.name {
+    text-align: center;
+    padding-top: 60px;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.description {
+    padding-top: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+
+}
+/*FINAL VALOR 4*/
+/*DIVISION DIVISIONDIVISION DIVISION DIVISION DIVISION*/
+/*INICIO VALOR 7*/
+
+.box_maylike{
+
+    width: 250px;
+    height: 400px;
+    position: sticky;
+    top: 94px;
+    background: white;
+    border-radius: 3%;
+    
+}
+
+.page_mylike {
+
+    padding: 18px;
+    
+    
+}
+
+
+.page_mylike a {
+    text-decoration: none;
+    color: inherit;
+    /*position:relative;*/
+    margin-left: 25px;   
+}
+
+.page_mylike p {
+    text-align: center;
+}
+
+
+
+.name_maylike {
+    text-align: center;
+    padding-top: 25px;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+
+
+.may_like_photo {
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    float: left;
+    transition: 0.5s;
+}
+
+.may_like_photo:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+.typepage {
+    font-size: 13px;
+    padding-top: 7px;
+    color: grey;
+    font-weight: 600;
+}
+/*FINAL VALOR 7*/
+/*DIVISION DIVISION DIVISION DIVISION DIVISION DIVISION DIVISION DIVISION*/
+/*INICIO VALOR 5*/
+.container_two {
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    gap: 1.5rem;
+
+    padding-bottom: 75px;
+    flex-wrap: wrap;
+    flex-direction:column
+}
+
+
+.post {
+    width: 700px;
+    height: 100px;
+    background-color:white;
+    display: flex;   
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+}
+
+
+.person_perfil_post {
+
+    height: 60px;
+    border-radius: 100%;
+    border: solid 2px blueviolet;
+    position: relative; /*o objeto se comporta de acordo com o posicionamento da caixa (filho)*/
+}
+
+
+
+.create_post {
+    background-color: #EEE;
+    width: 550px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:center; 
+}
+
+.barcreate {
+    width: 450px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+
+
+.button-81 {
+  background-color: blueviolet;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",
+  Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-81:hover {
+  background-color: rgb(104, 35, 168);
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .button-81 {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}
+
+
+/*FINAL VALOR 5*/
+/*DIVISION DIVISION DIVISION DIVISION DIVISION DIVISION DIVISION DIVISION*/
+/*INICIO VALOR 8*/
+
+
+.post_socialnetwork {
+    border-radius: 3%;
+    width: 700px;
+    height: 500px;
+    background-color: white;
+    padding: 20px;
+
+}
+
+.foto_other_user {
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    float: left;
+    transition: 0.5s;
+}
+
+.foto_other_user:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+.time_post {
+    font-size: 13px;
+    padding-top: 7px;
+    color: grey;
+    font-weight: 600;
+    padding-left: 80px;
+    
+}
+.name_other_user {
+    text-decoration: none;
+    color: inherit;
+    /*position:relative;*/
+    padding-left: 80px;
+    padding-top: 15px;
+
+}
+
+.text_post {
+    padding-top: 30px;
+}
+
+.publish_user {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+    border-radius: 3%;
+    transition: 0.3s;
+}
+
+.publish_user:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+    width: 495px;
+}
+
+.interation {
+    display: flex;
+    padding: 18px;
+    justify-content: space-around;
+}
+
+
+.fa-heart:hover {
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.fa-comment:hover {
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.fa-share-nodes:hover {
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.likethispost {
+    display: flex;
+    align-items: center;
+}
+.comment {
+    display: flex;
+    align-items: center;
+}
+
+.share {
+    display: flex;
+    align-items: center;
+}
+
+.interation p {
+    font-size: 12px;
+    color: grey;
+    padding-top: 4px;
+    padding-left: 6px;
+}
+
+
+
+
+/*FINAL VALOR 8*/
+/*DIVISION DIVISION DIVISION DIVISION DIVISION DIVISION DIVISION DIVISION*/
+
+.container_three {
+    display: flex;
+    justify-content:start;
+    gap: 1.5rem;
+    
+    flex-wrap: wrap;
+    flex-direction:column;
+    
+
+}
+
+/*INICIO VALOR 6*/
+
+.notifications {
+    width: 250px;
+    height: 625px;
+    background-color: white;
+    border-radius: 3%;
+}
+
+.box_notification {
+
+    width: 250px;
+    height: 400px;
+    position: sticky;
+    top: 94px;
+    background: white;
+    border-radius: 3%;
+    
+}
+
+.name_notification {
+    text-align: center;
+    padding-top: 25px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.person_notification {
+    padding: 18px;
+}
+
+
+.person_notification a {
+    text-decoration: none;
+    color: inherit;
+    /*position:relative;*/
+    margin-left: 25px;   
+}
+
+.person_notification p {
+    text-align: center;
+}
+
+
+
+.notification_photo {
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    float: left;
+    transition: 0.5s;
+}
+
+.notification_photo:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+.time_notification {
+    font-size: 13px;
+    padding-top: 7px;
+    color: grey;
+    font-weight: 600;
+}
+
+
+/*FINAL VALOR 6*/
+/*DIVISION DIVISION DIVISION DIVISION DIVISION DIVISION DIVISION DIVISION*/
+/*INICIO VALOR 9*/
+.advertizment {
+    border: red 1px solid;
+    width: 250px;
+    height: 400px;
+    background-color: rgb(229, 142, 185);
+    position: sticky;
+    top: 94px;
+}
+
+/*FINAL VALOR 9*/
+/*DIVISION DIVISION DIVISION DIVISION DIVISION DIVISION DIVISION DIVISION*/
+/*INICIO VALOR 10*/
+
+.person-online {
+    background: white;
+    align-items: center;
+    color: black;
+    position: fixed; /*Isso que cria a ideia do menu ser fixo, atribuindo tamanho e localização exata dele*/
+    bottom: 0; 
+    width: 100%;
+    height: 40px;
+    border: red 1px solid;
+}
+
+
+.person-icon-online {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+
+}
+
+.person-icon-online li {
+    display: flex;
+    margin: 5px;
+    
+    
+    
+}
