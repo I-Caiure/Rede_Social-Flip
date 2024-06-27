@@ -376,12 +376,20 @@ header {
 /*INICIO VALOR 8*/
 
 
+
+i {
+    float: right;
+    cursor: pointer;
+}
+
 .post_socialnetwork {
     border-radius: 3%;
     width: 700px;
     height: 500px;
     background-color: white;
     padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
 }
 
